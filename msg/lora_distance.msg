@@ -1,6 +1,6 @@
 Header header
-string node_id
 float32 distance
+int32 tx_seq
 float32 rssi
 float32 snr
 int32 tx_time
@@ -20,7 +20,7 @@ string raw_data
 
 # Input Name          | Message name
 # ------------------------------------
-# PacketID            | header.seq
+# PacketID            | tx_seq
 # LoRaNodeID          | header.frame_id
 # rospy.get_rostime() | header.stamp
 # calculated distance | distance

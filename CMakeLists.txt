@@ -105,7 +105,10 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES lora_messages
-  CATKIN_DEPENDS roscpp rospy std_msgs message_runtime
+  CATKIN_DEPENDS message_runtime
+  CATKIN_DEPENDS roscpp 
+  CATKIN_DEPENDS std_msgs
+  CATKIN_DEPENDS std_msgs
 #  DEPENDS system_lib
 )
 
